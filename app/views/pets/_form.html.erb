@@ -15,14 +15,22 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+
   <div class="field">
     <%= f.label :breed %><br>
     <%= f.text_field :breed %>
   </div>
+
   <div class="field">
     <%= f.label :age %><br>
     <%= f.number_field :age %>
   </div>
+  
+    <div class="field form-group">
+    <%= f.label "Photo" %><br>
+    <%= f.file_field :avatar %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

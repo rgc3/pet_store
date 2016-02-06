@@ -5,6 +5,8 @@
   <%= @pet.name %>
 </p>
 
+<%= image_tag @pet.avatar.url(:thumb) %>
+
 <p>
   <strong>Breed:</strong>
   <%= @pet.breed %>

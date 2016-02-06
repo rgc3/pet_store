@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   
 
   resources :pets
-  get 'welcome/about'
+  
+  get 'about' => 'welcome#about'
 
   root 'welcome#index'
 
