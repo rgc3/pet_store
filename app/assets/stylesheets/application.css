@@ -13,3 +13,87 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+ 	background-color: #EADAA2;
+ }
+
+.container {
+	background-color: #CE6C47;
+	padding-bottom: 10px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 10px;
+}
+
+/*custom navbar colors*/
+
+.navbar-default {
+  background-color: #960200;
+  border-color: #241e4e;
+}
+.navbar-default .navbar-brand {
+  color: #ffd046;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ce6c47;
+}
+.navbar-default .navbar-text {
+  color: #ffd046;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffd046;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ce6c47;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ce6c47;
+  background-color: #241e4e;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ce6c47;
+  background-color: #241e4e;
+}
+.navbar-default .navbar-toggle {
+  border-color: #241e4e;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #241e4e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffd046;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffd046;
+}
+.navbar-default .navbar-link {
+  color: #ffd046;
+}
+.navbar-default .navbar-link:hover {
+  color: #ce6c47;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffd046;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ce6c47;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ce6c47;
+    background-color: #241e4e;
+  }
+}

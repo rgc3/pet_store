@@ -2,24 +2,28 @@
 
 <div class='container'>
 
-	<p>
-	  <strong>Name:</strong>
+	
+
+	<h2>
 	  <%= @pet.name %>
-	</p>
+	</h2>
 
-	<%= image_tag @pet.avatar.url(:thumb) %>
+	<%= image_tag @pet.avatar.url(:large), class: "img-responsive" %>
 
-	<p>
+	<h4>
 	  <strong>Breed:</strong>
 	  <%= @pet.breed %>
-	</p>
+	</h4>
 
-	<p>
+	<h5>
 	  <strong>Age:</strong>
 	  <%= @pet.age %>
-	</p>
+	</h5>
 
-	<%= link_to 'Edit', edit_pet_path(@pet) %> |
-	<%= link_to 'Back', pets_path %>
+
+<div class="btn-group btn-group-xs" role="group" aria-label="...">
+	<button type="button" class="btn btn-default"><%= link_to 'Edit', edit_pet_path(@pet) %></button>
+	<button type="button" class="btn btn-default"><%= link_to 'Back', pets_path %></button>
+</div>
 
 </div>
