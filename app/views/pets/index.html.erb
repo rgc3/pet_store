@@ -1,33 +1,44 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Pets</h1>
+<div class='container'>
 
-<table>
-  <thead>
-    <tr>
-      <th>Pet ID</th>
-      <th>Name</th>
-      <th>Breed</th>
-      <th>Age</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <h1>Pets</h1>
 
-  <tbody>
-    <% @pets.each do |pet| %>
-      <tr>
-        <td><%= pet.id %></td>
-        <td><%= pet.name %></td>
-        <td><%= pet.breed %></td>
-        <td><%= pet.age %></td>
-        <td><%= link_to 'Show', pet %></td>
-        <td><%= link_to 'Edit', edit_pet_path(pet) %></td>
-        <td><%= link_to 'Destroy', pet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <div class = 'row'>
 
-<br>
+      <% @pets.each do |pet| %>
 
-<%= link_to 'New Pet', new_pet_path %>
+      <div class = 'col-md-4'>
+
+        <div class = 'panel panel-default'>
+
+          <div class="panel-heading">
+              <strong>Name: </strong><%= pet.name %>
+              <strong>Breed: </strong><%= pet.breed %>
+              <strong>Age: </strong><%= pet.age %>
+          </div>
+
+          <div class="panel-body">
+            <%= image_tag pet.avatar.url(:medium), class: "img-responsive" %>
+          </div>
+
+          <div class="panel-footer">
+            <%= link_to 'Show', pet %>
+            <%= link_to 'Edit', edit_pet_path(pet) %>
+            <%= link_to 'Delete', pet, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+
+        </div>
+
+      </div>
+
+      <% end %>
+
+
+  </div>
+
+  <br>
+
+  <%= link_to 'New Pet', new_pet_path %>
+
+</div>

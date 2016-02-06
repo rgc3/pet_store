@@ -1,21 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @pet.name %>
-</p>
+<div class='container'>
 
-<%= image_tag @pet.avatar.url(:thumb) %>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @pet.name %>
+	</p>
 
-<p>
-  <strong>Breed:</strong>
-  <%= @pet.breed %>
-</p>
+	<%= image_tag @pet.avatar.url(:thumb) %>
 
-<p>
-  <strong>Age:</strong>
-  <%= @pet.age %>
-</p>
+	<p>
+	  <strong>Breed:</strong>
+	  <%= @pet.breed %>
+	</p>
 
-<%= link_to 'Edit', edit_pet_path(@pet) %> |
-<%= link_to 'Back', pets_path %>
+	<p>
+	  <strong>Age:</strong>
+	  <%= @pet.age %>
+	</p>
+
+	<%= link_to 'Edit', edit_pet_path(@pet) %> |
+	<%= link_to 'Back', pets_path %>
+
+</div>
