@@ -60,7 +60,11 @@
 
       <ul class="nav navbar-nav navbar-right">
 
-        <li><a href="#">Link</a></li>
+        <li>
+          <% if user_signed_in? %>
+          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+          <% end %>
+        </li>
 
 <!-- right nav dropdown -->
 

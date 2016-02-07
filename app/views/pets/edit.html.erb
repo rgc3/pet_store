@@ -4,7 +4,12 @@
 
 	<%= render 'form' %>
 
-	<%= link_to 'Show', @pet %> |
-	<%= link_to 'Back', pets_path %>
+	<br>
+
+	<div class="btn-group btn-group-xs" role="group" aria-label="...">
+	<button type="button" class="btn btn-default"><%= link_to 'Show', @pet %></button>
+	<button type="button" class="btn btn-default"><%= link_to 'Back', pets_path %></button>
+</div>
+	
 
 </div>
